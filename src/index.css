@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  background-color: #21242a;
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: 1px #21242a33 solid;
+  padding: 15px 25px;
+  border-radius: 7.5px;
+}
+
+.input__wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input__wrapper:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.input__wrapper > input.error {
+  border-color: rgb(255, 0, 55);
+}
+
+.input__wrapper > label {
+  margin-bottom: 5px;
+}
+
+.input__wrapper > label.error {
+  color: rgb(255, 0, 55);
+}
