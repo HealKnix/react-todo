@@ -1,10 +1,11 @@
 .main {
+  position: relative;
   text-align: center;
   max-width: 800px;
   height: 100vh;
   margin: 0 auto;
-  background-color: #f6f6f6;
-  border-radius: 7.5px;
+  background-color: #ffffffd8;
+  backdrop-filter: blur(25px);
   padding: 25px;
   overflow-y: auto;
 }
@@ -19,7 +20,8 @@
 }
 
 .title {
-  padding: 20px 0;
+  padding: 10px 0;
+  font-size: 50px;
 }
 
 hr {
@@ -48,36 +50,6 @@ hr {
 
 .btn_new_todo:hover {
   opacity: 0.5;
-}
-
-.todo {
-  position: relative;
-  text-align: left;
-  max-width: 500px;
-  margin: 0 auto 25px auto;
-  padding: 15px;
-  background-color: white;
-  border: 1px solid #33333333;
-  border-radius: 7.5px;
-}
-
-.todo > hr {
-  border: 1px solid #66666622;
-  width: 100%;
-  margin: 5px 0;
-}
-
-.todo > h6 {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 20px;
-  min-height: 20px;
-  top: 10px;
-  right: 10px;
-  border-radius: 50%;
-  border: 2px dotted #66666666;
 }
 
 .errorMessage {

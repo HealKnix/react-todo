@@ -1,11 +1,8 @@
 import { useState } from 'react';
+import { Todo } from '../../types/TodoType';
+import BgRects from '../BgRects/BgRects';
+import TodoCard from '../TodoCard/TodoCard';
 import './App.css';
-
-type Todo = {
-  id: number;
-  title: string;
-  desctiption: string;
-};
 
 const todoList: Todo[] = [
   {
@@ -79,6 +76,8 @@ function App() {
 
   return (
     <>
+      <BgRects />
+
       <div className="main">
         <h1 className="title">To Do</h1>
 
@@ -119,13 +118,7 @@ function App() {
         </button>
 
         {todoList.length > 0 ? (
-          todos.map((todo) => (
-            <div className="todo">
-              <h6>{todo.id}</h6>
-              <h2 className="todo__title">{todo.title}</h2>
-              <p className="todo__description">{todo.desctiption}</p>
-            </div>
-          ))
+          todos.map((todo) => <TodoCard {...todo} />)
         ) : (
           <p>No todos</p>
         )}

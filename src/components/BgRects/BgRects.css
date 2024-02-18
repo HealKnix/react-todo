@@ -1,0 +1,47 @@
+.rect_design {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: #00ff66;
+  border-radius: 100px;
+  box-shadow: 0 0 75px #00ff6633;
+}
+
+.rect_design.rect_1 {
+  left: -60vh;
+  top: 0;
+  rotate: 65deg;
+}
+
+.rect_design.rect_1::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  scale: 0.9;
+  border-radius: inherit;
+  background-color: #00ff88;
+  box-shadow: 0 0 35px #33333322;
+}
+
+.rect_design.rect_2 {
+  left: auto;
+  right: -60vh;
+  top: 0;
+  rotate: 65deg;
+}
+
+.rect_design.rect_2::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  scale: 0.9;
+  border-radius: inherit;
+  background-color: #00ff88;
+  box-shadow: 0 0 35px #33333322;
+}
